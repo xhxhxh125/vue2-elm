@@ -1,4 +1,4 @@
-import fetch from '../config/fetch'
+import fetch from '../config/fetch' // 这个文件没看懂, 晚点研究
 import {getStore} from '../config/mUtils'
 
 /**

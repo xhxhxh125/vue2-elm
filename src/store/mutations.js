@@ -35,6 +35,9 @@ import {setStore, getStore} from '../config/mUtils'
 import {localapi, proapi} from 'src/config/env'
 
 export default {
+	/* 看了半天, 才看出来, 因为中括号[]里是字符串, 所以代表的是 export default的属性/方法
+		[EXAMPLE](param){program sentence}	
+	*/
 	// 记录当前经度纬度
 	[RECORD_ADDRESS](state, {
 		latitude,

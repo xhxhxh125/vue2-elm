@@ -1,5 +1,5 @@
 import App from '../App'
-
+// 此页配置路由线路
 const home = r => require.ensure([], () => r(require('../page/home/home')), 'home')
 const city = r => require.ensure([], () => r(require('../page/city/city')), 'city')
 const msite = r => require.ensure([], () => r(require('../page/msite/msite')), 'msite')

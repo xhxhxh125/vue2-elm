@@ -1,3 +1,14 @@
+// 此页目录
+/*
+ * 1. localStorage增加值
+ * 2. localStorage查询值
+ * 3. localStorage删除值
+ * 4. 获取dom样式
+ * 5. 页面触底, 加载更多
+ * 6. 判断何时显示顶部返回按钮(开始,结束,移动三个状态过程中判定)
+ * 7. 动画函数
+*/
+
 /**
  * 存储localStorage
  */
@@ -33,7 +44,7 @@ export const getStyle = (element, attr, NumberMode = 'int') => {
     // scrollTop 获取方式不同，没有它不属于style，而且只有document.body才能用
     if (attr === 'scrollTop') { 
         target = element.scrollTop;
-    }else if(element.currentStyle){
+    }else if(element.currentStyle){//非标准特性, 类似getComputedStyle
         target = element.currentStyle[attr]; 
     }else{ 
         target = document.defaultView.getComputedStyle(element,null)[attr]; 
